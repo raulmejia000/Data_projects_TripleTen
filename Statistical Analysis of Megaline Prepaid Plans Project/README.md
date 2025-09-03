@@ -1,5 +1,7 @@
 Statistical Analysis of Megaline Prepaid Plans 
 
+[Sprint 3 – Statistical Data Analysis (Megaline Plans)](https://github.com/raulmejia000/Data_projects_TripleTen/blob/main/Statistical%20Analysis%20of%20Megaline%20Prepaid%20Plans%20Project/Sprint%203%20Statistical%20Data%20Analysis%20Project.ipynb)
+
 Project description
 You work as an analyst for the telecom operator Megaline. The company offers its clients two prepaid plans, Surf and Ultimate. The commercial department wants to know which of the plans brings in more revenue in order to adjust the advertising budget. 
 
