@@ -34,8 +34,11 @@ Here are some visual examples from the analysis:
 
 
 Average number of Messages Sent Per Plan Per Month
+![Average number of messages sent per plan per month](average_number_of_messages3)
+
 
 Average Revenue Per Plan Per Month
+![Average revenue per plan per month](avg_revenue_per_plan_per_month3)
 
 Results & Conclusion
 - Surf users tend to exceed their plan limits more often, leading to higher additional charges.
