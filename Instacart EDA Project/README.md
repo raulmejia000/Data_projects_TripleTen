@@ -22,6 +22,7 @@ Busiest day of the week
 ![Busiest Day](Busiest_Day.png)
 
 Top 20 popular products
+
 ![Top 20](Top_20.png)
 
 Results
