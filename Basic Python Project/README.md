@@ -1,5 +1,8 @@
 Basic Python: Project
-[Sprint 1 – Working with Data in Python](https://github.com/raulmejia000/Data_projects_TripleTen/blob/main/Basic%20Python%20Project/Sprint%201%20Working%20with%20Data%20in%20Python.ipynb)
+[Sprint 1 – Working with Data in Python]
+
+[Sprint 1 – Basic Python Project](https://github.com/raulmejia000/Data_projects_TripleTen/blob/main/Basic%20Python%20Project/Basic%20Python%20Project%201.ipynb)
+
 
 
 In this project, you will work with data from the entertainment industry. You will study a dataset with records on movies and shows. The research will focus on the “Golden Age” of television, which began in 1999 with the release of The Sopranos and is still ongoing.
