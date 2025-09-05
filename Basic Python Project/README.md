@@ -21,7 +21,9 @@ Python, pandas, numpy, matplotlib, Jupyter Notebook.
 Features (Screenshots)
 Examples of project outputs include:
 - Data cleaning steps in code cells.
-- Visualizations showing data distributions and trends.
+- Visualizations showing filtered dataframe
+![Data Filtering](Data_filtering.png)
+![Filtered Data Frame](Filtered_Dataframe.png)
 
 Results
 - Successfully applied Python fundamentals to manipulate and analyze real-world-like data.
