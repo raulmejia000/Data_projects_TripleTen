@@ -1,7 +1,7 @@
 Basic Python: Project
-[Sprint 1 – Working with Data in Python]
 
-[Sprint 1 – Basic Python Project](https://github.com/raulmejia000/Data_projects_TripleTen/blob/main/Basic%20Python%20Project/Basic%20Python%20Project%201.ipynb)
+
+[Basic Python Project](https://github.com/raulmejia000/Data_projects_TripleTen/blob/main/Basic%20Python%20Project/Basic%20Python%20Project%201.ipynb)
 
 
 
