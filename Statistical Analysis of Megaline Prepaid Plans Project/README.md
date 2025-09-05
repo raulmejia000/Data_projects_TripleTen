@@ -33,10 +33,9 @@ Project Features (Screenshots)
 Here are some visual examples from the analysis:
 
 
-Distribution of data usage among Surf and Ultimate users.
+Average number of Messages Sent Per Plan Per Month
 
-
-Boxplot comparing monthly revenue between Surf and Ultimate plans.
+Average Revenue Per Plan Per Month
 
 Results & Conclusion
 - Surf users tend to exceed their plan limits more often, leading to higher additional charges.
