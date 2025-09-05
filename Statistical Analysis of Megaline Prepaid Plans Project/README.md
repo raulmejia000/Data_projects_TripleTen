@@ -1,6 +1,7 @@
 Statistical Analysis of Megaline Prepaid Plans 
 
-[Sprint 3 – Statistical Data Analysis (Megaline Plans)](https://github.com/raulmejia000/Data_projects_TripleTen/blob/main/Statistical%20Analysis%20of%20Megaline%20Prepaid%20Plans%20Project/Sprint%203%20Statistical%20Data%20Analysis%20Project.ipynb)
+[Statistical Analysis of Megaline Prepaid Plans](https://github.com/raulmejia000/Data_projects_TripleTen/blob/main/Statistical%20Analysis%20of%20Megaline%20Prepaid%20Plans%20Project/Statistical%20Analysis%20of%20Megaline%20Prepaid%20Plans%20Project%203.ipynb)
+
 
 Introduction
 
