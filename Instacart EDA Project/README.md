@@ -2,99 +2,38 @@ Instacart EDA Project
 
 [Instacart EDA Project](https://github.com/raulmejia000/Data_projects_TripleTen/blob/main/Instacart%20EDA%20Project/Instacart%20EDA%20project%202.ipynb)
 
+Introduction
 
+The goal of this project was to perform an exploratory data analysis (EDA) on the Instacart dataset to uncover key shopping trends. By investigating ordering behavior, product demand, and time-based purchasing patterns, the objective was to generate insights into customer activity that could be useful for business decision-making.
 
-Project Description
-DATASETS
+What Was Done
+- Imported and explored multiple datasets (orders.csv, products.csv, aisles.csv, departments.csv).
+- Cleaned the data by handling missing values, correcting data types, and removing duplicates.
+- Joined datasets together to create a unified view of customer orders and product details.
+- Generated summary statistics and frequency counts for product demand, order timing, and aisle popularity.
+- Built visualizations to reveal patterns such as most ordered products, busiest order hours, and most popular departments.
 
-instacart_orders.csv
+Tools & Libraries used:
+Python, pandas, numpy, matplotlib, seaborn, Jupyter Notebook.
 
-products.csv
+Features (Screenshots)
 
-order_products.csv
+Busiest day of the week
 
-aisles.csv
+Top 20 popular products
+Results
+- Identified the top products and most popular aisles in the dataset.
+- Found that customer orders peak during weekends and late afternoons.
+- Discovered that a small group of aisles contributes to a large portion of Instacart’s overall sales.
+- Demonstrated the importance of data cleaning and joining multiple datasets to unlock insights.
 
-departments.csv
+Improvements & Business Suggestions
 
-TEMPLATE NOTEBOOK
+Improvements:
+- Use advanced visualizations (heatmaps, interactive dashboards) to make results more dynamic.
+- Incorporate machine learning to predict next product purchases.
 
-EDA_final_project_template.ipynb
-
-Congratulations, you’ve completed the sprint on EDA! It’s time to apply the knowledge and skills you’ve acquired to an analytical case study.
-
-When you’ve finished the project, send your work to the project reviewer on the platform for assessment. They’ll give you feedback within 24 hours. Use their feedback to make changes, and then send the new version back to the project reviewer.
-
-You may get more feedback on the new version. This is completely normal. It’s not uncommon to go through several cycles of feedback and revision.
-
-Your project will be considered complete as soon as the project reviewer approves it.
-
-Project description
-For this project, you’ll work with data from Instacart. 
-
-Instacart is a grocery delivery platform where customers can place a grocery order and have it delivered to them, similar to how Uber Eats and Door Dash work. This particular dataset was publicly released by Instacart in 2017 for a Kaggle competition. 
-
-The dataset we've provided for you has been modified from the original. We've reduced the size of the dataset so that your calculations run faster and we’ve introduced missing and duplicate values. We were also careful to preserve the distributions of the original data when we made our changes.
-
-Your mission is to clean up the data and prepare a report that gives insight into the shopping habits of Instacart customers. After answering each question, write a brief explanation of your results in a markdown cell of your Jupyter notebook.
-
-This project will require you to make plots that communicate your results. Make sure that any plots you create have a title, labeled axes, and a legend if necessary; and include plt.show() at the end of each cell with a plot.
-
-Data dictionary
-There are five tables in the dataset, and you’ll need to use all of them to do your data preprocessing and EDA. Below is a data dictionary that lists the columns in each table and describes that data that hold.
-
-instacart_orders.csv: each row corresponds to one order on the Instacart app
-'order_id': ID number that uniquely identifies each order
-'user_id': ID number that uniquely identifies each customer account
-'order_number': the number of times this customer has placed an order
-'order_dow': day of the week that the order placed (which day is 0 is uncertain)
-'order_hour_of_day': hour of the day that the order was placed
-'days_since_prior_order': number of days since this customer placed their previous order
-products.csv: each row corresponds to a unique product that customers can buy
-'product_id': ID number that uniquely identifies each product
-'product_name': name of the product
-'aisle_id': ID number that uniquely identifies each grocery aisle category
-'department_id': ID number that uniquely identifies each grocery department category
-order_products.csv: each row corresponds to one item placed in an order
-'order_id': ID number that uniquely identifies each order
-'product_id': ID number that uniquely identifies each product
-'add_to_cart_order': the sequential order in which each item was placed in the cart
-'reordered': 0 if the customer has never ordered this product before, 1 if they have
-aisles.csv
-'aisle_id': ID number that uniquely identifies each grocery aisle category
-'aisle': name of the aisle
-departments.csv
-'department_id': ID number that uniquely identifies each grocery department category
-'department': name of the department
-Instructions for completing the project
-Step 1: Open the data files (/datasets/instacart_orders.csv, /datasets/products.csv, /datasets/aisles.csv, /datasets/departments.csv, and /datasets/order_products.csv) and have a look at the general contents of each table. Note that the files have nonstandard formatting, so you'll need to set certain arguments in pd.read_csv() to read the data correctly. Take a look at the CSV files to get a sense of what those arguments should be.
-
-Note that order_products.csv contains many rows of data. When a DataFrame has too many rows, info() will not print the non-null counts by default. If you want to to print the non-null counts, include show_counts=True when you call info().
-
-Step 2: Preprocess the data by doing the following:
-
-Verify and fix data types (e.g. make sure ID columns are integers)
-Identify and fill in missing values
-Identify and remove duplicate values
-Be sure to explain what types of missing and duplicate values you found, how you filled or removed them, why you used those methods, and why you think these missing and duplicate values may have been present in the dataset.
-
-Step 3: Once the data is processed and ready for analysis, perform the following analysis:
-
-[A] (must complete all to pass)
-
-Verify that values in the 'order_hour_of_day' and 'order_dow' columns in the orders table are sensible (i.e. 'order_hour_of_day' ranges from 0 to 23 and 'order_dow' ranges from 0 to 6).
-Create a plot that shows how many people place orders for each hour of the day.
-Create a plot that shows what day of the week people shop for groceries.
-Create a plot that shows how long people wait until placing their next order, and comment on the minimum and maximum values.
-[B] (must complete all to pass)
-
-Is there a difference in 'order_hour_of_day' distributions on Wednesdays and Saturdays? Plot the histograms for both days on the same plot and describe the differences that you see.
-Plot the distribution for the number of orders that customers place (e.g. how many customers placed only 1 order, how many placed only 2, how many only 3, and so on…)
-What are the top 20 products that are ordered most frequently (display their id and name)?
-[C] (must complete at least two to pass)
-
-How many items do people typically buy in one order? What does the distribution look like?
-What are the top 20 items that are reordered most frequently (display their names and product IDs)?
-For each product, what proportion of its orders are reorders (create a table with columns for the product ID, product name, and reorder proportion)?
-For each customer, what proportion of their products ordered are reorders?
-What are the top 20 items that people put in their carts first (display the product IDs, product names, and number of times they were the first item added to the cart)?
+Business Outcomes:
+- Instacart can optimize delivery slots during peak order times.
+- Marketing campaigns can be targeted around the most popular aisles and frequently purchased items.
+- Product placement and recommendations can be improved to boost cross-sells.
