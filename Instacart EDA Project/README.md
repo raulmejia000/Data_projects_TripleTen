@@ -1,5 +1,7 @@
 Instacart EDA Project
-[Sprint 2 – Exploratory Data Analysis (Instacart EDA Project)](https://github.com/raulmejia000/Data_projects_TripleTen/blob/main/Instacart%20EDA%20Project/Sprint%202%20Exploratory%20Data%20Analysis%20(EDA)%20Project.ipynb)
+
+[Instacart EDA Project](https://github.com/raulmejia000/Data_projects_TripleTen/blob/main/Instacart%20EDA%20Project/Instacart%20EDA%20project%202.ipynb)
+
 
 
 Project Description
