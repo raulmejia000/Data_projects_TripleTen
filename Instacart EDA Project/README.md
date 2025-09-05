@@ -19,8 +19,10 @@ Python, pandas, numpy, matplotlib, seaborn, Jupyter Notebook.
 Features (Screenshots)
 
 Busiest day of the week
+![Busiest Day](Busiest_Day.png)
 
 Top 20 popular products
+
 Results
 - Identified the top products and most popular aisles in the dataset.
 - Found that customer orders peak during weekends and late afternoons.
