@@ -2,113 +2,53 @@ Statistical Analysis of Megaline Prepaid Plans
 
 [Sprint 3 – Statistical Data Analysis (Megaline Plans)](https://github.com/raulmejia000/Data_projects_TripleTen/blob/main/Statistical%20Analysis%20of%20Megaline%20Prepaid%20Plans%20Project/Sprint%203%20Statistical%20Data%20Analysis%20Project.ipynb)
 
-Project description
-You work as an analyst for the telecom operator Megaline. The company offers its clients two prepaid plans, Surf and Ultimate. The commercial department wants to know which of the plans brings in more revenue in order to adjust the advertising budget. 
+Introduction
 
-You are going to carry out a preliminary analysis of the plans based on a relatively small client selection. You'll have the data on 500 Megaline clients: who the clients are, where they're from, which plan they use, and the number of calls they made and text messages they sent in 2018. Your job is to analyze clients' behavior and determine which prepaid plan brings in more revenue. 
+In this project, I worked as a data analyst for the telecom company Megaline, which offers two prepaid plans: Surf and Ultimate. The business goal was to determine which plan generates more revenue so that the commercial department could make informed decisions about advertising budgets. By analyzing customer usage data, I aimed to uncover behavioral patterns and revenue differences between the two plans.
 
-Description of the plans
-Note: Megaline rounds seconds up to minutes, and megabytes to gigabytes. For calls, each individual call is rounded up: even if the call lasted just one second, it will be counted as one minute. For web traffic, individual web sessions are not rounded up. Instead, the total for the month is rounded up. If someone uses 1025 megabytes this month, they will be charged for 2 gigabytes.
+What Was Done
 
-Surf
+Data Preparation:
+- Loaded datasets containing information on users, calls, text messages, internet usage, and plan details.
+- Cleaned the data by converting columns to the correct data types and addressing inconsistencies.
+- Aggregated customer behavior per month (calls, minutes, texts, and internet usage).
 
-Monthly charge: $20
-500 monthly minutes, 50 texts, and 15 GB of data
-After exceeding the package limits:
-1 minute: 3 cents
-1 text message: 3 cents
-1 GB of data: $10
-Ultimate
+Feature Engineering:
+- Calculated monthly revenue for each user by accounting for included plan limits and additional usage costs.
+- Created distributions for calls, messages, and data usage across both plans.
 
-Monthly charge: $70
-3000 monthly minutes, 1000 text messages, and 30 GB of data
-After exceeding the package limits:
-1 minute: 1 cent
-1 text message: 1 cent
-1 GB of data: $7
-Instructions on completing the project
-Step 1. Open the data file and study the general information
+Statistical Analysis:
+- Calculated descriptive statistics (mean, variance, standard deviation) for usage and revenue.
+- Plotted histograms and boxplots to visualize customer behavior differences.
+- Formulated and tested hypotheses:
+  1. The average revenue of Ultimate users differs from that of Surf users.
+  2.The average revenue of users in the NY–NJ area differs from that of users in other regions.
 
-File path: 
+Tools & Libraries used:
+Python, pandas, numpy, matplotlib, seaborn, scipy.
 
-/datasets/megaline_calls.csv Download dataset
+Project Features (Screenshots)
 
-/datasets/megaline_internet.csv Download dataset
+Here are some visual examples from the analysis:
 
-/datasets/megaline_messages.csv Download dataset
 
-/datasets/megaline_plans.csv Download dataset
+Distribution of data usage among Surf and Ultimate users.
 
-/datasets/megaline_users.csv Download dataset
 
-Step 2. Prepare the data
+Boxplot comparing monthly revenue between Surf and Ultimate plans.
 
-Convert the data to the necessary types
-Find and eliminate errors in the data
-Explain what errors you found and how you removed them. 
+Results & Conclusion
+- Surf users tend to exceed their plan limits more often, leading to higher additional charges.
+- Ultimate users pay a higher fixed monthly fee but rarely exceed their allowances.
+- The average revenue between Surf and Ultimate users is significantly different, confirming the first hypothesis.
+- No significant revenue difference was found between the NY–NJ area and other regions, rejecting the second hypothesis.
+- Overall, while the Ultimate plan provides stability, the Surf plan can sometimes generate more revenue when customers exceed usage limits.
 
-For each user, find:
+Improvements & Business Suggestions
 
-The number of calls made and minutes used per month
-The number of text messages sent per month
-The volume of data per month
-The monthly revenue from each user (subtract the free package limit from the total number of calls, text messages, and data; multiply the result by the calling plan value; add the monthly charge depending on the calling plan)
-Step 3. Analyze the data
+Improvements: Future analysis could use larger datasets or more recent customer data for better accuracy. Additional factors like customer churn or satisfaction scores could be integrated.
 
-Describe the customers' behavior. Find the minutes, texts, and volume of data the users of each plan require per month. Calculate the mean, variance, and standard deviation. Plot histograms. Describe the distributions. 
-
-Step 4. Test the hypotheses
-
-The average revenue from users of Ultimate and Surf calling plans differs.
-The average revenue from users in NY-NJ area is different from that of the users from other regions.
-You decide what alpha value to use.
-
-Explain:
-
-How you formulated the null and alternative hypotheses.
-What criterion you used to test the hypotheses and why.
-Step 5. Write an overall conclusion
-
-Format: Complete the task in Jupyter Notebook. Put the programming code in code cells and text explanations in markdown cells, then apply formatting and headings.
-
-Description of the data
-Remember! Megaline rounds seconds up to minutes, and megabytes to gigabytes. For calls, each individual call is rounded up: even if the call lasted just one second, it will be counted as one minute. For web traffic, individual web sessions are not rounded up. Instead, the total for the month is rounded up. If someone uses 1025 megabytes this month, they will be charged for 2 gigabytes.
-
-The users table (data on users):
-
-user_id — unique user identifier
-first_name — user's name
-last_name — user's last name
-age — user's age (years)
-reg_date — subscription date (dd, mm, yy)
-churn_date — the date the user stopped using the service (if the value is missing, the calling plan was being used when this database was extracted)
-city — user's city of residence
-plan — calling plan name
-The calls table (data on calls):
-
-id — unique call identifier
-call_date — call date
-duration — call duration (in minutes)
-user_id — the identifier of the user making the call
-The messages table (data on texts):
-
-id — unique text message identifier
-message_date — text message date
-user_id — the identifier of the user sending the text
-The internet table (data on web sessions):
-
-id — unique session identifier
-mb_used — the volume of data spent during the session (in megabytes)
-session_date — web session date
-user_id — user identifier
-The plans table (data on the plans):
-
-plan_name — calling plan name
-usd_monthly_fee — monthly charge in US dollars
-minutes_included — monthly minute allowance
-messages_included — monthly text allowance
-mb_per_month_included — data volume allowance (in megabytes)
-usd_per_minute — price per minute after exceeding the package limits (e.g., if the package includes 100 minutes, the 101st minute will be charged)
-usd_per_message — price per text after exceeding the package limits
-usd_per_gb — price per extra gigabyte of data after exceeding the package limits (1 GB = 1024 megabytes)
-
+Business Outcomes:
+- Megaline could increase profitability by promoting the Surf plan to heavy users who frequently exceed their limits.
+- Alternatively, targeted advertising could be used to upsell the Ultimate plan to customers seeking predictable monthly bills.
+- Regional marketing strategies should focus on usage behavior rather than geography since no significant regional differences were found.
