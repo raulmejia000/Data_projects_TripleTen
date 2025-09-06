@@ -34,9 +34,10 @@ Project Features (Screenshots)
 Below are some visual outputs from the analysis:
 
 Distrubtion of Ratings
+[distribution of ratings](distribution_of_ratings14.png)
 
 Number of reviews of different polarites per year as well as distrubtion of different polarities per movie
-
+[polarities](polarities14.png)
 
 Results & Conclusion
 - Logistic Regression and SVM achieved the highest accuracy among all models.
