@@ -1,5 +1,7 @@
 Sentiment Analysis of Movie Reviews Using Traditional NLP Models
 
+[Sentiment Analysis of Movie Reviews Using Traditional NLP Models](https://github.com/raulmejia000/Data_projects_TripleTen/blob/main/Sentiment%20Analysis%20of%20Movie%20Reviews%20Using%20Traditional%20NLP%20Models/Sentiment%20Analysis%20of%20Movie%20Reviews%20Using%20Traditional%20NLP%20Models%20Project%2014.ipynb)
+
 Introduction
 
 In this project, I applied machine learning techniques for text classification to analyze sentiment in movie reviews. The goal was to determine whether a review is positive or negative, using traditional Natural Language Processing (NLP) models. This project builds on concepts of feature extraction, preprocessing, and supervised learning, focusing on accuracy and interpretability over raw deep learning models.
