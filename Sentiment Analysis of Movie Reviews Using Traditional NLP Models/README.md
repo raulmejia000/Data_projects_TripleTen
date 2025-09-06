@@ -33,9 +33,10 @@ Project Features (Screenshots)
 
 Below are some visual outputs from the analysis:
 
-Top weighted words that influence classification in Logistic Regression.
+Distrubtion of Ratings
 
-Confusion matrix showing classification performance on test data.
+Number of reviews of different polarites per year as well as distrubtion of different polarities per movie
+
 
 Results & Conclusion
 - Logistic Regression and SVM achieved the highest accuracy among all models.
